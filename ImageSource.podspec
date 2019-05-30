@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
   s.author                 = { 'Andrey Yutkin' => 'ayutkin@avito.ru' }
   s.source                 = { :git => 'https://github.com/avito-tech/Paparazzo.git', :tag => "ImageSource-#{s.version}" }
   s.platform               = :ios, '8.0'
-  s.ios.deployment_target = "8.0"
-  s.requires_arc = true
+  s.ios.deployment_target  = "8.0"
+  s.requires_arc           = true
+  s.swift_version          = "4.0"
   s.default_subspec = 'Core', 'PHAsset', 'Local', 'Remote', 'AlamofireImage'
   
   s.subspec 'Core' do |cs|
