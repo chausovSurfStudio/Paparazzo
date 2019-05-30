@@ -16,21 +16,21 @@ Pod::Spec.new do |s|
   
   s.dependency 'JNWSpringAnimation'
   
-  s.dependency 'ImageSource/Core'
-  s.dependency 'ImageSource/PHAsset'
-  s.dependency 'ImageSource/Local'
-  s.dependency 'ImageSource/Remote'
+  s.dependency 'ImageSource/Core', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
+  s.dependency 'ImageSource/PHAsset', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
+  s.dependency 'ImageSource/Local', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
+  s.dependency 'ImageSource/Remote', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
 
   s.default_subspec = 'Core', 'Marshroute', 'AlamofireImage'
 
   s.subspec 'AlamofireImage' do |ai|
     ai.dependency 'Paparazzo/Core'
-    ai.dependency 'ImageSource/AlamofireImage'
+    ai.dependency 'ImageSource/AlamofireImage', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
   end
 
   s.subspec 'SDWebImage' do |sd|
     sd.dependency 'Paparazzo/Core'
-    sd.dependency 'ImageSource/SDWebImage'
+    sd.dependency 'ImageSource/SDWebImage', :git => 'https://github.com/chausovSurfStudio/ImageSource', :commit => '6ee6530c99c5fea2ba2edfb9ba59ff3abb338cdd'
   end
   
   s.subspec 'Core' do |cs|
