@@ -8,8 +8,9 @@ Pod::Spec.new do |s|
   s.author                 = { 'Andrey Yutkin' => 'ayutkin@avito.ru' }
   s.source                 = { :git => 'https://github.com/avito-tech/Paparazzo.git', :tag => "Paparazzo-#{s.version}" }
   s.platform               = :ios, '8.0'
-  s.ios.deployment_target = "8.0"
-  s.requires_arc = true
+  s.ios.deployment_target  = "8.0"
+  s.requires_arc           = true
+  s.swift_version          = "4.0"
 
   s.frameworks = 'UIKit', 'Photos', 'ImageIO', 'MobileCoreServices', 'GLKit', 'OpenGLES', 'CoreMedia', 'CoreVideo', 'AVFoundation', 'QuartzCore'
   
